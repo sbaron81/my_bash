@@ -19,6 +19,8 @@ pipeline {
       steps {
         script {
           echo 'Stage 3'
+          sh 'chmod 755 run.sh'
+          sh './run.sh'
         }
       }
     }
